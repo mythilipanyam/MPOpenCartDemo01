@@ -11,7 +11,7 @@ pipeline
         {
             steps 
             {
-                 git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+                 git 'https://github.com/jglick/simple-maven-project-with-tests'
                  sh "mvn -Dmaven.test.failure.ignore=true clean package"
             }
             post 
