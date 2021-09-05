@@ -29,7 +29,7 @@ pipeline
         stage('Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/naveenanimation20/June2021POMSeries.git'
+                    git 'https://github.com/mythilipanyam/MPOpenCartDemo01'
                     sh "mvn clean install"
                 }
             }
