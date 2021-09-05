@@ -49,6 +49,7 @@ public class LoginPage {
 	}
 	
 	public AccountPage doLogin(String un,String pwrd) {
+		System.out.println("========"+un+":"+pwrd+"========");
 		eleUtil.doSendKeys(emailId, un);
 		eleUtil.doSendKeys(password, pwrd);
 		eleUtil.doClick(loginBtn);
