@@ -30,7 +30,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/mythilipanyam/MPOpenCartDemo01'
-                    sh "mvn clean install"
+                    bat "mvn clean install"
                 }
             }
         }
