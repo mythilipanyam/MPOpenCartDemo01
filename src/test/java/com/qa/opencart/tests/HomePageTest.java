@@ -60,7 +60,7 @@ public class HomePageTest extends BaseTest {
 	
 	@Description("verifyTopLinksTest() ")
 	@Severity(SeverityLevel.CRITICAL)
-	@Test(priority=6,enabled=false)
+	@Test(priority=6)
 	public void verifyTopLinksTest() {
 		List<String>topLinksList=homePage.verifyTopLinks();
 		System.out.println(topLinksList.size());
