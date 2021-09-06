@@ -61,8 +61,8 @@ public class LoginPageTest extends BaseTest {
 
 	@Test(priority=7)
 	public void doLogin_PositiveTest() {
-		//AccountPage accountPage=loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
-		AccountPage accountPage=loginPage.doLogin(System.getProperty("username"),System.getProperty("password"));
+	 accountPage=loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
+		//AccountPage accountPage=loginPage.doLogin(System.getProperty("username"),System.getProperty("password"));
 		Assert.assertTrue(accountPage.doeslogoutBtnPresent());
 	}
 	

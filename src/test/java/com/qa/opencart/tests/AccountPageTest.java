@@ -14,8 +14,8 @@ public class AccountPageTest extends BaseTest {
 	@BeforeClass
 	public void accountPageSetUp() {
 		loginPage = homePage.doClickOnLoginLink("Login");
-		//accountPage=loginPage.doLogin(prop.getProperty("username").trim(),prop.getProperty("password").trim());
-		accountPage=loginPage.doLogin(System.getProperty("username"),System.getProperty("password"));
+		accountPage=loginPage.doLogin(prop.getProperty("username").trim(),prop.getProperty("password").trim());
+		//accountPage=loginPage.doLogin(System.getProperty("username"),System.getProperty("password"));
 	}
 	
 	@Test(priority=1)
